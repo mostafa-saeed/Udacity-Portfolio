@@ -1,0 +1,130 @@
+/* Global CSS */
+* { 
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 100;
+    text-transform: uppercase;
+    color: #2d3c49;
+}
+
+a {
+    text-decoration: none;
+    color: #7d97ad;
+}
+
+a:hover {
+    color: #02b3e4;
+}
+
+.container {
+    width: 80%;
+    margin: 0px 10%;
+}
+
+section {
+    margin-top: 10px;
+}
+
+
+/* Header Section */
+header {
+    max-width: 100%;
+    padding: 0px 10px;
+    border-bottom: 3px solid #7d97ad;
+}
+
+.logo {
+    display: block;
+    margin: 0 auto;
+    width: 80px;
+}
+
+.information {
+    text-align: center;
+}
+
+
+/* Main Section */
+section h3::after {
+    content: ':';
+}
+
+/* Hero Section */
+.hero {
+    background-image: url(../img/hero.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.hero .container {
+    text-align: center;
+    color: #fff;
+}
+
+.hero-heading {
+    color: #fff;
+}
+
+
+/* Portfolio Section */
+.portfolio-wrapper {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.portfolio-item {
+    padding: 10px;
+    position: relative;
+}
+
+.portfolio-item h4 {
+    font-size: 24px;
+    text-align: center;
+}
+
+
+@media screen and (min-width: 640px) {
+    
+    .logo {
+        display: inline;
+    }
+    
+    .information {
+        float: right;
+        text-align: left;
+    }
+
+    .portfolio-item {
+        width: 50%;
+    }
+    
+}
+
+@media screen and (min-width: 920px) {
+    .portfolio-item {
+        width: calc(100%/3);
+    }
+}
